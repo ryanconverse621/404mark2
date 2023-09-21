@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #19243C;
+    --secondary-color: #F96B1C;
+    --background-color: #FFFFFE;
+    --other-color: #0657CD;
+    --visited-color: #FF7381;
+    --big-text: 25px;
+    --medium-text: 20px;
+    --small-text: 15px;
+} 
+
+
+body {
+    background-color: var(--background-color);
+    font-family: Monaco, Arial, monospace;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 400px;
+}
+
+header nav a:link {
+    font-size: var(--big-text);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+}
+
+.container img { 
+    max-width: 375px;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    font-size: var(--big-text);
+}
+
+.text h2 {
+    font-size: var(--medium-text);
+}
+
+footer {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    bottom: 0;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    font-size: var(--small-text);
+}
+
+hr {
+    border-color: var(--other-color);
+    width: 100%;
+}
+
+.ReturnHome {
+    display: flex;
+    justify-content: center; /* Horizontally center the button */
+    align-items: center; /* Vertically center the button */
+    margin: 0 auto; /* Center horizontally within the container */
+    border-style: solid;
+    border-color:#F96B1C;
+    background-color: #19243C;
+    color: #A7DEFF;
+    padding: 5px 30px;
+    border-radius: 50px;
+    font-size: var(--big-text);
+}
+
+.ReturnHome:hover {
+    color: var(--visited-color);
+}
+
+@media screen and (max-width: 768px) {
+    /* header {
+        flex-direction: column;
+    } */
+
+    header nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 25px
+    }
+
+
+}
